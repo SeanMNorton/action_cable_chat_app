@@ -1,6 +1,7 @@
-<div class="message-input">
+<div class="message-input" id="message_form">
   <%= form_for(@message, remote: true) do |f| %>
     <%= f.text_area :content %>
-    <%= f.submit "Send" %>
+    <%= f.submit "Send", id: 'submit_message_btn'%>
+    <button class="fake_submit">Send</button>
   <% end %>
 </div>
